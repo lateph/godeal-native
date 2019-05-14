@@ -1,0 +1,64 @@
+{  
+   "cardArts":[  ],
+   "cardMetadata":{  
+      "expDate":"0321",
+      "lastDigits":"7890"
+   },
+   "cardReferenceId":{  
+      "value":"C563AB4ABDBE1CD542A43487564A98BF51471C322C392BF300F60DF421310811"
+   },
+   "consumerLanguageCode":"in-",
+   "id":{  
+      "value":"3ead51cc-dedd-449a-9033-95c3a79240ed"
+   },
+   "issuerData":{  
+      "businessEmail":{  
+         "values":{  
+            "ja":"email1@jcb.co.jp",
+            "en":"email2@jcb.co.jp"
+         }
+      },
+      "businessHomePage":{  
+         "values":{  
+            "ja":"https://www.jcb.co.jp",
+            "en":"https://www.jcb.co.jp"
+         }
+      },
+      "displayName":{  
+         "values":{  
+            "ja":"ããã«ã¡ã¯",
+            "en":"Hello"
+         }
+      },
+      "logo":"V2lzZTs1QUE4MEU1Nzk2QjY1NjUyNjMwQjk0MDA3OThGNDJBRjQzRDkxMTk5REMwQzI1OEFDNUFDM0UyMzkyNDk3NDEw",
+      "mobileApps":[  
+         {  
+            "action":"com.bank.foo.DO_SOMETHING",
+            "packageName":"com.bank.foo",
+            "platform":"android",
+            "properties":[  
+               {  
+                  "key":"android.intent.extra.TEXT",
+                  "value":"intent extra text"
+               }
+            ]
+         }
+      ],
+      "phoneNumber":{  
+         "values":{  
+            "en":"WISE_1 phone"
+         }
+      },
+      "privacyPolicyUrl":{  
+         "values":{  
+            "en":"WISE_1.policy.url"
+         }
+      },
+      "tncUrl":{  
+         "values":{  
+            "en":"null"
+         }
+      }
+   },
+   "scheme":"WISE"
+},

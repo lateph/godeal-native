@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".tr_input_data">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:id="@+id/constraintLayout">
+
+        <ImageView
+                android:layout_width="0dp"
+                android:layout_height="80dp" app:srcCompat="@drawable/header_gradasi"
+                android:id="@+id/imageView2" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" android:scaleType="centerCrop"
+                app:layout_constraintHorizontal_bias="0.0"/>
+        <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp" app:srcCompat="@drawable/home_pln"
+                android:id="@+id/trImgLogo"
+                android:transitionName="logoTransition"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="15dp" android:scaleType="fitCenter"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2" app:layout_constraintStart_toEndOf="@+id/trImgLogo"
+                android:layout_marginStart="16dp" android:fontFamily="@font/open_sans"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView2" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="@+id/imageView2" android:layout_marginBottom="8dp"
+                android:textSize="15sp" android:textColor="@color/hitam33"/>
+        <TextView
+                android:text="PLN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="@+id/imageView2"
+                app:layout_constraintStart_toEndOf="@+id/textView2"
+                android:fontFamily="@font/open_sans_semibold" android:textSize="15sp"
+                android:textColor="@color/hitam30"/>
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>
