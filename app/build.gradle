@@ -55,18 +55,5 @@ dependencies {
     implementation('me.dm7.barcodescanner:zxing:1.9.8') {
         exclude group: 'com.android.support'
     }
-
-
-    implementation 'com.squareup.okhttp3:logging-interceptor:3.6.0'
-    implementation 'com.squareup.okhttp3:okhttp:3.8.0'
-    implementation 'com.squareup.retrofit2:converter-jackson:2.3.0'
-    implementation 'com.squareup.retrofit2:converter-scalars:2.3.0'
-    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
-    implementation 'android.arch.work:work-runtime:1.0.0'
-    implementation 'com.fasterxml.uuid:java-uuid-generator:3.1.5'
-    implementation 'org.bouncycastle:bcprov-jdk15on:1.55'
-    implementation 'org.slf4j:slf4j-api:1.7.21'
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.7.2'
-
-    implementation project(':wa-api-rintis-1.2.0-rintissit')
 }

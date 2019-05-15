@@ -81,30 +81,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         my_recycler_view.layoutManager = GridLayoutManager(this, 3)
         val adapter  = MainMenuAdapter(data, this)
-        adapter.setOnItemClickListener(object : MainMenuAdapter.ClickListener {
-            override fun onClick(it: MainMenu, aView: ImageView) {
-                if (!isFinishing) {
-                    if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
-                        val intent = Intent(applicationContext, TransaksiPulsaActivity::class.java)
-                        intent.putExtra("id", it.img)
-                    val options = ActivityOptions
-                        .makeSceneTransitionAnimation(this@MainActivity, aView, "logoTransition")
-                        // start the new activity
-                    startActivity(intent, options.toBundle())
-//                        startActivity(intent)
-//                finishAfterTransition()
-                    }
-                    else{
-                        val intent = Intent(applicationContext, TransaksiPulsaActivity::class.java)
-                        intent.putExtra("id", it.img)
-                        startActivity(intent)
-//                finish()
-                    }
-                }
-//            val intent = Intent(applicationContext, TransaksiPulsaActivity::class.java)
-//            startActivity(intent)
-            }
-        })
 
         my_recycler_view.adapter = adapter
         my_recycler_view.setFocusable(false)

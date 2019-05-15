@@ -7,7 +7,6 @@ import android.support.v7.app.ActionBar
 import android.view.Menu
 import android.view.MenuItem
 import androidx.navigation.findNavController
-import com.idemia.wa.api.WalletAgentApi
 import kotlinx.android.synthetic.main.activity_card_enrollment.toolbar
 
 class CardEnrollmentActivity : AppCompatActivity() {
