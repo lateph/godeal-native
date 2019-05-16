@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Primapay</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash__screen">Primapay</string>
+
+    <!-- Login page  -->
+    <string name="login_title_1">Arab welcome</string>
+    <string name="login_title_2">First Wholesale Hotel Booking app</string>
+    <string name="login_username">Username</string>
+    <string name="login_password">Password</string>
+    <string name="login_forgot_password">Forgot your password?</string>
+    <string name="login_btn">LOG IN</string>
+    <string name="login_create_text">Don't have an account? <u>Sign up now</u></string>
+</resources>
