@@ -4,7 +4,7 @@
             xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navigation_pulsa"
             app:startDestination="@id/tr_input_data">
 
-    <fragment android:id="@+id/tr_input_data" android:name="com.example.primapay.tr_input_data"
+    <fragment android:id="@+id/tr_input_data" android:name="com.lateph.godeals.tr_input_data"
               android:label="fragment_tr_input_data" tools:layout="@layout/tr_fragment_input_data">
         <argument android:name="id" app:argType="integer"/>
     </fragment>

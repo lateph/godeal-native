@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data class="CreateO">
+        <variable name="opportunity" type="com.lateph.godeals.retrofit.model.CreateOpportunity.Body"/>
+    </data>
+    <android.support.constraint.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/birubening"
+        tools:context=".AgentCreateOpportunity">
+        <EditText
+                android:nextFocusForward="@id/personPerRoom"
+                android:imeOptions="actionNext"
+                android:layout_width="0dp"
+                android:text="@={`` + opportunity.roomNeeded}"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/roomNeeded"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                android:layout_marginTop="6dp" app:layout_constraintTop_toBottomOf="@+id/textView11"
+                android:layout_marginEnd="4dp" app:layout_constraintEnd_toStartOf="@+id/guideline5"
+                android:hint="@string/agent_create_oppo_room_placeholder" android:layout_height="52dp"
+                style="@style/form_input"/>
+        <EditText
+                android:nextFocusForward="@id/checkInDate"
+                android:imeOptions="actionDone"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/personPerRoom"
+                android:text="@={`` + opportunity.personPerRoom}"
+                app:layout_constraintStart_toStartOf="@+id/guideline5" android:layout_marginTop="6dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView12"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                android:layout_marginStart="4dp" style="@style/form_input"
+                android:hint="@string/agent_create_oppo_person_placeholder"/>
+        <EditText
+                android:focusable="false"
+                android:nextFocusForward="@id/checkOutDate"
+                android:imeOptions="actionNext"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:inputType="date"
+                android:ems="10"
+                android:id="@+id/checkInDate"
+                android:text="@={opportunity.checkInDate}"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/textView13"
+                android:layout_marginEnd="4dp" app:layout_constraintEnd_toStartOf="@+id/guideline5"
+                style="@style/form_input" android:hint="@string/agent_create_oppo_check_in_placeholder"/>
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:inputType="date"
+                android:focusable="false"
+                android:ems="10"
+                android:id="@+id/checkOutDate"
+                android:text="@={opportunity.checkOutDate}"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintStart_toStartOf="@+id/guideline5" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" android:layout_marginStart="4dp"
+                style="@style/form_input" android:hint="@string/agent_create_oppo_check_out_placeholder"/>
+        <EditText
+                android:focusable="false"
+                android:text="@{opportunity.areasText}"
+                android:drawableEnd="@drawable/ic_add_black"
+                android:layout_height="52dp"
+                android:hint="@string/agent_create_oppo_area_placeholder"
+                android:id="@+id/areaIds"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/textView15"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                android:layout_width="0dp"
+                style="@style/form_input"/>
+        <MultiAutoCompleteTextView
+                android:hint="@string/agent_create_oppo_select_placeholder"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:id="@+id/additionalService"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/textView19"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                style="@style/form_input"/>
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/editText5"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintTop_toBottomOf="@+id/textView10"
+                android:hint="@string/agent_create_oppo_notes_placeholder"
+                android:layout_marginTop="8dp"
+                style="@style/form_input"
+        />
+        <android.support.constraint.Guideline
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:layout_constraintGuide_begin="16dp" android:id="@+id/guideline3"/>
+        <android.support.constraint.Guideline
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/guideline4"
+                app:layout_constraintGuide_end="16dp"/>
+        <android.support.constraint.Guideline
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/guideline5" app:layout_constraintGuide_percent="0.5"/>
+        <TextView
+                android:text="@string/agent_create_oppo_room_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView11" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="@+id/guideline3"
+                android:layout_marginStart="8dp"
+                android:textAppearance="@style/form_input_label"/>
+        <TextView
+                android:text="@string/agent_create_oppo_person_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView12" app:layout_constraintStart_toStartOf="@+id/guideline5"
+                android:layout_marginStart="12dp" android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+                android:textAppearance="@style/form_input_label"/>
+        <TextView
+                android:text="@string/agent_create_oppo_check_in_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView13" app:layout_constraintStart_toStartOf="@+id/guideline3"
+                android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/roomNeeded"
+                android:textAppearance="@style/form_input_label"/>
+        <TextView
+                android:text="@string/agent_create_oppo_check_out_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView14" app:layout_constraintStart_toStartOf="@+id/guideline5"
+                android:layout_marginStart="12dp" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/personPerRoom"
+                android:textAppearance="@style/form_input_label"/>
+        <TextView
+                android:text="@string/agent_create_oppo_area_label"
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:id="@+id/textView15" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/checkInDate"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                android:layout_marginStart="8dp" android:textAppearance="@style/form_input_label"/>
+        <TextView
+                android:text="@string/agent_create_oppo_select_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView19" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/areaIds" app:layout_constraintStart_toStartOf="@+id/guideline3"
+                android:layout_marginStart="8dp" android:textAppearance="@style/form_input_label"/>
+        <Button
+                android:text="Button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/button" app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/editText5"/>
+
+        <TextView
+                android:text="@string/agent_create_oppo_select_placeholder2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView20" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/additionalService"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"/>
+        <TextView
+                android:text="@string/agent_create_oppo_notes_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView10"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView20" app:layout_constraintStart_toStartOf="@+id/guideline3"
+                android:layout_marginStart="8dp"/>
+    </android.support.constraint.ConstraintLayout>
+</layout>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">@color/biru</color>
-    <color name="colorPrimaryDark">@color/biruDark</color>
-    <color name="colorAccent">@color/kuning</color>
+    <color name="colorPrimary">@color/green</color>
+    <color name="colorPrimaryDark">@color/green</color>
+    <color name="colorAccent">@color/green</color>
     <color name="kuning">#FFBB34</color>
     <color name="biru">#2699FB</color>
     <color name="biruDark">#034E8D</color>
@@ -10,5 +10,7 @@
     <color name="hitam30">#303030</color>
     <color name="whitef4">#f4f4f4</color>
     <color name="grey48">#929292</color>
+    <color name="greyBA">#BABABA</color>
     <color name="green">#229D5F</color>
+    <color name="birubening">#F6F7F9</color>
 </resources>

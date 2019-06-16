@@ -15,5 +15,31 @@
     <string name="login_password">Password</string>
     <string name="login_forgot_password">Forgot your password?</string>
     <string name="login_btn">LOG IN</string>
-    <string name="login_create_text">Don't have an account? <u>Sign up now</u></string>
+    <string name="login_create_text">Don\'t have an account?
+        <u>Sign up now</u>
+    </string>
+
+    <!-- Dashboard page  -->
+    <string name="agent_app_title">Godeals</string>
+    <string name="agent_dashboard_text1">You Have %1$d Active Opportunity</string>
+    <string name="agent_dashboard_text2">%1$d Hours %2$d Mins</string>
+    <string name="agent_dashboard_text3">%1$d Active Opportunity Bidding</string>
+
+    <!-- agent create oppo page  -->
+    <string name="agent_create_oppo_check_in_label">CHECK-IN</string>
+    <string name="agent_create_oppo_check_in_placeholder">Select Date</string>
+    <string name="agent_create_oppo_check_out_label">CHECK-OUT</string>
+    <string name="agent_create_oppo_check_out_placeholder">Select Date</string>
+    <string name="agent_create_oppo_room_label">ROOM</string>
+    <string name="agent_create_oppo_room_placeholder">Input Number</string>
+    <string name="agent_create_oppo_person_label">PERSON PER ROOM</string>
+    <string name="agent_create_oppo_person_placeholder">Input Number</string>
+    <string name="agent_create_oppo_area_label">CITY</string>
+    <string name="agent_create_oppo_area_placeholder">Add City</string>
+    <string name="agent_create_oppo_select_label">SELECT SERVICES</string>
+    <string name="agent_create_oppo_select_placeholder">Add Services</string>
+    <string name="agent_create_oppo_select_placeholder2">Add or Edit Services</string>
+    <string name="agent_create_oppo_notes_label">Notes</string>
+    <string name="agent_create_oppo_notes_placeholder">Type here</string>
+    <string name="title_activity_agent_select_area">Map</string>
 </resources>

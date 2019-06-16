@@ -3,50 +3,36 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/green</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:actionBarStyle">@style/MyActionBar</item>
     </style>
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
-        <item name="android:background">@android:color/white</item>
-        <item name="android:textColorPrimary">@color/hitam33</item>
-        <item name="colorControlNormal">@color/biru</item>
+
     </style>
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
     <style name="MyStyle" parent="@style/AppTheme.NoActionBar">
 
     </style>
-    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
-        <item name="android:background">@android:color/white</item>
-        <item name="android:actionBarStyle">@style/MyTheme.ActionBarStyle</item>
+    <style name="TitleBarTextAppearance" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/proximaovabold</item>
+        <item name="android:textSize">23sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
     </style>
-    <style name="MyTheme.ActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar">
-        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+    <style name="form_input" parent="Widget.AppCompat.EditText">
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:fontFamily">@font/proximanovaregular</item>
+        <item name="android:background">@drawable/background_input_normal</item>
     </style>
-
-    <style name="MyTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
-        <item name="android:textColor">@color/hitam30</item>
-    </style>
-
-    <style name="MyTheme2" parent="Theme.AppCompat.Light">
-        <item name="android:actionBarStyle">@style/MyActionBar2.ActionBar</item>
-        <item name="actionBarStyle">@style/MyActionBar2.ActionBar</item>
-        <item name="colorControlNormal">@color/biru</item>
-    </style>
-
-    <style name="MyActionBar2.ActionBar" parent="Widget.AppCompat.ActionBar">
-        <item name="android:background">@android:color/white</item>
-        <item name="background">@android:color/white</item>
-        <item name="titleTextStyle">@style/MyActionBar2.ActionBar.TitleTextStyle</item>
-        <item name="elevation">0dp</item>
-    </style>
-
-    <style name="MyActionBar2.ActionBar.TitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
-        <item name="android:textColor">@color/hitam30</item>
+    <style name="form_input_label" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/greyBA</item>
+        <item name="android:fontFamily">@font/proximanovaregular</item>
     </style>
 </resources>

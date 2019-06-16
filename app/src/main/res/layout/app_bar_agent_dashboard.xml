@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AgentDashboardActivity">
+
+    <android.support.design.widget.AppBarLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+                app:contentScrim="@color/colorPrimary"
+                app:title="@string/agent_app_title"
+                app:titleEnabled="false"
+        >
+            <android.support.constraint.ConstraintLayout android:layout_width="match_parent"
+                                                         android:layout_height="184dp">
+
+                <TextView
+                        android:text="@string/agent_dashboard_text2"
+                        android:background="@drawable/background_agent_dashboard_text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/title2"
+                        app:layout_constraintTop_toBottomOf="@+id/title1" app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="8dp" android:textSize="24sp"
+                        android:fontFamily="@font/proximanovasemibold" android:textColor="@android:color/white"
+                        android:padding="10dp" android:layout_marginTop="8dp"/>
+                <TextView
+                        android:text="@string/agent_dashboard_text3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/title3"
+                        app:layout_constraintTop_toBottomOf="@+id/title2" app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="8dp" android:fontFamily="@font/proximanovaregular"
+                        android:textSize="12sp" android:textColor="@android:color/white"
+                        android:layout_marginTop="8dp"/>
+                <TextView
+                        android:text="@string/agent_dashboard_text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/title1"
+                        android:layout_marginTop="60dp"
+                        app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="8dp" android:fontFamily="@font/proximanovasemibold"
+                        android:textSize="16sp" android:textColor="@android:color/white"/>
+            </android.support.constraint.ConstraintLayout>
+            <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    app:layout_collapseMode="pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary"
+                    app:titleTextAppearance="@style/TitleBarTextAppearance"
+                    app:title="@string/agent_app_title"
+                    app:popupTheme="@style/AppTheme.PopupOverlay"/>
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_agent_dashboard"/>
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            app:srcCompat="@drawable/ic_add_white"/>
+
+</android.support.design.widget.CoordinatorLayout>
